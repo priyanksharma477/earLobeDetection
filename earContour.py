@@ -52,16 +52,11 @@ while (1):
             if (area > max_area1):
 		#max_area2 = max_area1
                 max_area1 = area
-		#c2 = c1
                 c1 = i
-	    #elif area > max_area2:
-		#max_area2 = area
-		#c2 = i
 
         ((x1, y1), radius1) = cv2.minEnclosingCircle(cnts[c1])
 	#((x2, y2), radius2) = cv2.minEnclosingCircle(cnts[c2])
         M1 = cv2.moments(cnts[c1])
-	#M2 = cv2.moments(cnts[c2])
         center1=(0,0)
  	#center2=(0,0)
         if int(M1["m00"]) != 0:# and int(M2["m00"]) != 0:
