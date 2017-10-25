@@ -3,7 +3,7 @@ from sklearn.svm import SVR
 import matplotlib.pyplot as plt
 
 f=open("output.txt", "r")
-ftest = open("outputTest3.txt", "r")
+ftest = open("outputTest3.txt", "r") 
 label = open("ear_coordinate.txt","r")
 testX = open("TestLabel_X.txt","w")
 testY = open("TestLabel_Y.txt","w")
